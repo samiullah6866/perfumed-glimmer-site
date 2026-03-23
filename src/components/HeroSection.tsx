@@ -6,7 +6,7 @@ import heroImage from "@/assets/hero-perfume.jpg";
 const HeroSection = () => (
   <section className="relative w-full min-h-screen flex items-center overflow-hidden">
     {/* Background */}
-    <div className="absolute inset-0">
+    <div className="absolute inset-0 w-full h-full">
       <motion.img
         initial={{ scale: 1.2 }}
         animate={{ scale: 1 }}
@@ -15,15 +15,15 @@ const HeroSection = () => (
         alt="Luxury perfume"
         className="w-full h-full object-cover"
       />
-      <div className="absolute inset-0 bg-background/70" />
-      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/50 to-transparent" />
+      <div className="absolute inset-0 bg-background/60" />
+      <div className="absolute inset-0 bg-gradient-to-r from-background via-background/40 to-transparent" />
     </div>
 
-    <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 lg:px-20 pt-20">
+    <div className="relative z-10 w-full max-w-[1400px] mx-auto px-6 md:px-12 lg:px-20 pt-20">
       <motion.p
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.5, duration: 0.8 }}
+        transition={{ delay: 0.3, duration: 0.6 }}
         className="text-primary tracking-[0.4em] text-xs md:text-sm uppercase mb-6"
       >
         The Art of Fragrance
@@ -32,8 +32,8 @@ const HeroSection = () => (
       <motion.h1
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.7, duration: 1 }}
-        className="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.9] mb-8"
+        transition={{ delay: 0.5, duration: 0.8 }}
+        className="font-display text-5xl md:text-7xl lg:text-8xl xl:text-9xl leading-[0.9] mb-8"
       >
         Discover
         <br />
@@ -43,8 +43,8 @@ const HeroSection = () => (
       <motion.p
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 0.8 }}
-        className="text-muted-foreground max-w-md text-lg leading-relaxed mb-10"
+        transition={{ delay: 0.7, duration: 0.6 }}
+        className="text-muted-foreground max-w-lg text-lg md:text-xl leading-relaxed mb-10"
       >
         Exquisite fragrances crafted from the world's finest ingredients, designed to leave an unforgettable impression.
       </motion.p>
@@ -52,8 +52,8 @@ const HeroSection = () => (
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 1.3, duration: 0.8 }}
-        className="flex gap-6"
+        transition={{ delay: 0.9, duration: 0.6 }}
+        className="flex flex-wrap gap-4 md:gap-6"
       >
         <Link
           to="/shop"
@@ -75,7 +75,7 @@ const HeroSection = () => (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
-      transition={{ delay: 2 }}
+      transition={{ delay: 1.5 }}
       className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
     >
       <span className="text-muted-foreground text-xs tracking-[0.3em] uppercase">Scroll</span>
