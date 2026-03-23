@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import heroImage from "@/assets/hero-perfume.jpg";
 
 const HeroSection = () => (
-  <section className="relative min-h-screen flex items-center overflow-hidden">
+  <section className="relative w-full min-h-screen flex items-center overflow-hidden">
     {/* Background */}
     <div className="absolute inset-0">
       <motion.img
